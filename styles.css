@@ -11,7 +11,7 @@ form {
   width: 40rem;
 }
 
-span[role=button] {
+span[role="button"] {
   display: table-cell;
   font-size: 1rem;
   padding: 8px 8px;
@@ -24,13 +24,17 @@ span[role=button] {
   outline: none;
 }
 
-span[role=button]:hover,
-span[role=button]:focus {
+span[role="button"]:hover,
+span[role="button"]:focus {
   -webkit-box-shadow: 0 0 6px #595959;
           box-shadow: 0 0 6px #595959;
   background-color: #183a57;
   border-color: #265986;
   outline: 2px solid transparent;
+}
+
+html.no-js span[role="button"] {
+  border-radius: 5px;
 }
 
 .hide {
@@ -44,7 +48,11 @@ span[role=button]:focus {
   border: 0;
 }
 
-input[type=text] {
+html.no-js .hide {
+  display: none;
+}
+
+input[type="text"] {
   display: table-cell;
   margin-left: -5px;
   width: 20rem;
@@ -58,7 +66,11 @@ input[type=text] {
   background-color: #ffffff;
 }
 
-input[type=text]:focus {
+html.no-js input[type="text"] {
+  display: none;
+}
+
+input[type="text"]:focus {
   -webkit-box-shadow: 0 0 6px #595959;
           box-shadow: 0 0 6px #595959;
   border-color: #265986;

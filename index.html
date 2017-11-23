@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Accessabilly file upload</title>
+  </head>
+
+  <body>
+    <h1>Styled accessible file upload</h1>
+    <form action="#" enctype="multipart/form-data">
+      <label for="fileupload" id="buttonlabel">
+        <span role="button" aria-controls="filename" tabindex="0">
+          upload file
+        </span>
+      </label>
+      <input type="file" id="fileupload">
+      <label for="filename" class="hide">
+        uploaded file
+      </label>
+      <input type="text" id="filename" autocomplete="off" readonly placeholder="no file uploaded">  
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>

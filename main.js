@@ -11,5 +11,6 @@ $('#buttonlabel span[role=button]').bind('keypress keyup', function(e) {
 $('#fileupload').change(function(e) {
   var filename = $('#fileupload').val().split('\\').pop();
   $('#filename').val(filename);
+  $('#filename').attr('placeholder', filename);
   $('#filename').focus();
 });

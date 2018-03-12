@@ -1,4 +1,4 @@
-# accessabilly-upload
+# accessabilly-file-upload
 An accessible styled file upload.
 
 Find a [demo](https://codepen.io/accessabilly/pen/qNpZJg) on Codepen.
